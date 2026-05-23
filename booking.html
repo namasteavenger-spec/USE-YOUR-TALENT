@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Session | USE YOUR TALENT | Music Therapy and Lessons</title>
+    <meta
+      name="description"
+      content="Book your music therapy or lesson session with USE YOUR TALENT."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Use Your Talent home">
+          <span class="brand-mark">♪</span>
+          <span>
+            <strong>USE YOUR TALENT</strong>
+            <small>Music Therapy and Creative Lessons</small>
+          </span>
+        </a>
+
+        <nav class="nav">
+          <a href="services.html">Services</a>
+          <a href="approach.html">Approach</a>
+          <a href="reviews.html">Testimonials</a>
+          <a href="booking.html">Book</a>
+        </nav>
+
+        <a class="button ghost" href="booking.html">Book now</a>
+      </header>
+
+      <main id="top">
+        <section class="section booking-wrap" id="booking">
+          <div class="booking-copy">
+            <p class="eyebrow">Booking area</p>
+            <h2>Book an enquiry or first session</h2>
+            <p>
+              This form is ready for Netlify and designed to collect new client enquiries for therapy and lessons.
+            </p>
+            <div class="booking-points">
+              <span>Therapy enquiries</span>
+              <span>Lesson bookings</span>
+              <span>Consultation requests</span>
+            </div>
+          </div>
+
+          <form class="booking-form card" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="booking" />
+            <p class="hidden-field">
+              <label>
+                Do not fill this out if you are human: <input name="bot-field" />
+              </label>
+            </p>
+
+            <div class="form-grid">
+              <label>
+                Full name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email address
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Phone number
+                <input type="tel" name="phone" placeholder="Optional" />
+              </label>
+              <label>
+                Service type
+                <select name="service" required>
+                  <option value="">Choose one</option>
+                  <option>Music therapy</option>
+                  <option>Piano lessons</option>
+                  <option>Voice coaching</option>
+                  <option>Songwriting support</option>
+                  <option>Intro consultation</option>
+                </select>
+              </label>
+              <label class="full-width">
+                Preferred day or time
+                <input type="text" name="availability" placeholder="Example: Wednesdays after 4 pm" />
+              </label>
+              <label class="full-width">
+                Tell us a little about your goals
+                <textarea name="message" rows="5" placeholder="Share age range, support needs, musical interests, or your session goals"></textarea>
+              </label>
+            </div>
+
+            <button class="button primary full" type="submit">Send booking request</button>
+            <p class="form-note">A thoughtful response can usually be sent within one working day.</p>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
