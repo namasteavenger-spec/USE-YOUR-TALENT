@@ -102,6 +102,8 @@ body::after {
   width: 44px;
   height: 44px;
   display: grid;
+  position: relative;
+  overflow: hidden;
   place-items: center;
   border-radius: 14px;
   background: linear-gradient(135deg, var(--sun), #fff2b8);
@@ -109,6 +111,22 @@ body::after {
   font-size: 1.3rem;
   font-weight: 700;
   box-shadow: var(--shadow);
+}
+
+.brand-fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.brand-logo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .nav {
