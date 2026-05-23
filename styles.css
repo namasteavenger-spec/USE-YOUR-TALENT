@@ -99,8 +99,8 @@ body::after {
 }
 
 .brand-mark {
-  width: 44px;
-  height: 44px;
+  width: 72px;
+  height: 72px;
   display: grid;
   position: relative;
   overflow: hidden;
@@ -423,5 +423,10 @@ textarea::placeholder {
 
   .nav {
     gap: 12px;
+  }
+
+  .brand-mark {
+    width: 60px;
+    height: 60px;
   }
 }
